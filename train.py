@@ -125,8 +125,8 @@ def train(args):
             dur = time.perf_counter()-start
             if rank == 0:
                 
-                print('Iter: {} Mel Loss: {:.2e} Gate Loss: {:.2e} Grad Norm: {:.2e} {:.1f}s/it'.format(
-                    iteration, items[0], items[1], grad_norm, dur))
+                #print('Iter: {} Mel Loss: {:.2e} Gate Loss: {:.2e} Grad Norm: {:.2e} {:.1f}s/it'.format(
+                 #   iteration, items[0], items[1], grad_norm, dur))
 
                 
                 if args.log_dir != '' and (iteration % hps.iters_per_log == 0):
