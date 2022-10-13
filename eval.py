@@ -1,6 +1,7 @@
 from hparams import hparams as hps
 import random
 import matplotlib.pyplot as plt
+from sklearn.metrics import precision_recall_curve
 class eval():
   x = []
   for i in range(hps.max_iter):
@@ -22,4 +23,4 @@ class eval():
   plt.title("Accuracy Graph")
   plt.legend()
   plt.savefig('plot.png', dpi=300, bbox_inches='tight')
-  plt.show()
+  
