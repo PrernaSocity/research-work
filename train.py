@@ -149,15 +149,15 @@ def train(args):
             iteration += 1
         epoch += 1
     x = []
-    for i in range(max_iter):
+    for i in range(hps.max_iter):
         x.append(i)
     y = []
-    for i in range(max_iter):
+    for i in range(hps.max_iter):
         num = random.random()
         if num > 0:
             y.append(random.random())
     z = []
-    for i in range(max_iter):
+    for i in range(hps.max_iter):
         num = random.random()
         if num > 0:
             z.append(random.random())
